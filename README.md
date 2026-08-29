@@ -1,8 +1,7 @@
-# workload-aware-llm-benchmarking
+# When Do LLM Serving Optimizations Help? A Bottleneck-Guided Evaluation
 
 Benchmarking suite and analysis pipeline for the paper
-**"A Systematic Study of LLM Inference Optimizations Under
-Diverse Workloads Distributions"**
+**"When Do LLM Serving Optimizations Help? A Bottleneck-Guided Evaluation"**
 
 The dataaset used for prompts can also be found on Zenodo, at https://zenodo.org/records/20128763?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImIxMTk3NGYwLTc4NmMtNGFiZC05YmJmLTliOTc4YzQzNDA3ZiIsImRhdGEiOnt9LCJyYW5kb20iOiI4MGE2Yzk3OTgxNWFjYTYwZDQ1OTlmY2RlYzNkMzZmYyJ9.bTNiAt1IIjZRnOONBMnp-J2QUKNRmeEVhdweyKI4xXBE0O3ukYAoHI0WYVUpBd4P9XM4ZOPXaUVdzVyVBTtoQg
 
