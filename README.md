@@ -3,14 +3,10 @@
 Benchmarking suite and analysis pipeline for the paper
 **"A Systematic Study of LLM Inference Optimizations Under
 Diverse Workloads Distributions"**
-(Abhinav Khanduja, University of Illinois Urbana-Champaign).
 
-This repository contains everything needed to reproduce the paper's results and to
-extend the suite to new engines, configurations, or workloads. The dataaset used for prompts can also be found on Zenodo, at https://zenodo.org/records/20128763?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImIxMTk3NGYwLTc4NmMtNGFiZC05YmJmLTliOTc4YzQzNDA3ZiIsImRhdGEiOnt9LCJyYW5kb20iOiI4MGE2Yzk3OTgxNWFjYTYwZDQ1OTlmY2RlYzNkMzZmYyJ9.bTNiAt1IIjZRnOONBMnp-J2QUKNRmeEVhdweyKI4xXBE0O3ukYAoHI0WYVUpBd4P9XM4ZOPXaUVdzVyVBTtoQg
+The dataaset used for prompts can also be found on Zenodo, at https://zenodo.org/records/20128763?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImIxMTk3NGYwLTc4NmMtNGFiZC05YmJmLTliOTc4YzQzNDA3ZiIsImRhdGEiOnt9LCJyYW5kb20iOiI4MGE2Yzk3OTgxNWFjYTYwZDQ1OTlmY2RlYzNkMzZmYyJ9.bTNiAt1IIjZRnOONBMnp-J2QUKNRmeEVhdweyKI4xXBE0O3ukYAoHI0WYVUpBd4P9XM4ZOPXaUVdzVyVBTtoQg
 
 ---
-
-## 1. What this project is
 
 Modern LLM serving frameworks (vLLM, SGLang) ship with a long list of advanced
 optimizations — speculative decoding, chunked prefill, RadixAttention / automatic
@@ -24,7 +20,7 @@ rather than using a single benchmark dataset. The goal is to map each optimizati
 to the prompt distributions where it actually pays off — and to expose the regimes
 where it silently hurts.
 
-### What's evaluated
+### Evaluation
 
 | Engine  | Configurations                                                                 |
 |---------|--------------------------------------------------------------------------------|
@@ -87,10 +83,7 @@ workload-aware-llm-benchmarking/
 
 ---
 
-## 3. Quick start — reproducing the paper
-
-Everything in the paper is reproducible from two Colab notebooks plus an analysis
-notebook. You do not need a local GPU; Colab's A100 runtime is enough.
+## 3. Quick start — reproducing the repo
 
 ### Prerequisites
 
@@ -290,5 +283,5 @@ every cross-engine figure.
 This suite is built on top of the excellent open-source work of the
 [vLLM](https://github.com/vllm-project/vllm) and
 [SGLang](https://github.com/sgl-project/sglang) communities, and uses 
-[Databricks Dolly-15k](https://huggingface.co/datasets/databricks/databricks-dolly-15k) and
+[Databricks Dolly-15k](https://huggingface.co/datasets/databricks/databricks-dolly-15k) 
 [ShareGPT](https://huggingface.co/datasets/Aeala/ShareGPT_Vicuna_unfiltered) datasets for prompt construction.
