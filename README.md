@@ -13,10 +13,10 @@ prefix caching, `torch.compile`-based JIT fusion, and so on. Each of these is
 marketed as a throughput or latency win, but in practice each one behaves very
 differently depending on the *shape* of the traffic hitting the server.
 
-This project evaluates those optimizations under **seven engineered workloads**
+This work evaluates those optimizations under **seven engineered workloads**
 and **two external datasets** that each isolate a different inference bottleneck,
 rather than using a single benchmark dataset. The goal is to map each optimization
-to the prompt distributions where it actually pays off — and to expose the regimes
+to the prompt distributions where it actually pays off  and to expose the regimes
 where it silently hurts.
 
 ### Evaluation
